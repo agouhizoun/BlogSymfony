@@ -1,0 +1,9 @@
+controllers:
+  resource: ../src/Controller/
+  type: attribute
+
+app_home:
+  path: /
+  controller: App\Controller\HomeController::index
+# la route est juste path: / sans le home#
+# Dans le HomeControllerphp, il faut supprimer #[Route('/home', name: 'app_home')]

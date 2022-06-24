@@ -1,0 +1,15 @@
+<h1>
+  créez un controlleur Panier dans lequel vous aurez une méthode afiichePanier()
+  qui aura pour but de nous afficher une page d'un panier (le panier sera une
+  simulation en créant une variable contenant un tableau de produits min4),
+  chaque produit aura : id, titre, description, prix
+</h1>
+
+{% for produit in produits %}
+<ul>
+  <li>{{ produit.id }}</li>
+  <li>{{ produit.titre }}</li>
+  <li>{{ produit.description }}</li>
+  <li>{{ produit.prix }}</li>
+</ul>
+{% endfor %}
